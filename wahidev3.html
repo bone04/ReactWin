@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <title>ReactJS Docs</title>
+  <script crossorigin src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+  <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+<body>
+
+<div id="root"></div>
+
+<!-- Load Babel -->
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+<!-- Your custom script here -->
+<script type="text/babel">
+  function getGreeting(user) {
+    if (user) {
+      return <h1>Halo, {formatName(user)}!</h1>;
+    }
+    return <h1>Halo, Orang Asing.</h1>;
+  }
+
+</script>
+</body>
+</html>
